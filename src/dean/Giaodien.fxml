@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dean.GiaodienController">
+   <children>
+      <Label fx:id="title" layoutX="190.0" layoutY="28.0" text="BÀI TOÁN VẬN TẢI">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Pane fx:id="P1" layoutY="80.0" prefHeight="320.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="thu" layoutX="355.0" layoutY="80.0" prefHeight="25.0" prefWidth="74.0" />
+            <TextField fx:id="phat" layoutX="355.0" layoutY="140.0" prefHeight="25.0" prefWidth="74.0" />
+            <Label layoutX="181.0" layoutY="84.0" text="SỐ CỘT THU" />
+            <Label layoutX="181.0" layoutY="144.0" text="SỐ CỘT PHÁT" />
+            <Button fx:id="okbutton" layoutX="196.0" layoutY="212.0" mnemonicParsing="false" onAction="#okclick" prefHeight="25.0" prefWidth="46.0" text="OK" />
+            <Button layoutX="355.0" layoutY="212.0" mnemonicParsing="false" onAction="#exitclick" prefHeight="25.0" prefWidth="46.0" text="EXIT" />
+         </children>
+      </Pane>
+      <Pane fx:id="P2" layoutY="80.0" prefHeight="320.0" prefWidth="600.0" visible="false" />
+      <Button fx:id="Gobutton" layoutX="476.0" layoutY="41.0" mnemonicParsing="false" onAction="#Tinhtoan" text="GO" visible="false" />
+      <Label fx:id="min" layoutX="20.0" layoutY="39.0" />
+   </children>
+</Pane>
